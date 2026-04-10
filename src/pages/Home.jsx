@@ -11,7 +11,7 @@ export default function Home() {
     <>
 
     <div className='container'>
-        <h1 className='mt-20 text-6xl font-bold text-center text-white border-b-2 border-purple-400 header ml-50'>Welcome to <span className='text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text'>CineVault...</span></h1>
+        <h1 className='mt-20 text-6xl font-bold text-center text-white border-b-2 border-purple-400 header ml-50'>Welcome to <span className='text-transparent bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text'>CineVault...</span></h1>
     </div>
 
     <div className='container flex justify-between gap-10 mt-20'>
