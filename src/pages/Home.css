@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Rammetto+One&family=Sawarabi+Gothic&display=swap');
+
+.header{
+    font-family: "Rammetto One", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 0, 24);
+}
+
+@keyframes float1 {
+
+    0%,
+    100% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes float2 {
+
+    0%,
+    100% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes float3 {
+
+    0%,
+    100% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes float4 {
+
+    0%,
+    100% {
+        transform: translate(-15px, -10px);
+    }
+
+    50% {
+        transform: translate(15px, 10px);
+    }
+}
+
+@keyframes float5 {
+
+    0%,
+    100% {
+        transform: translate(10px, -15px);
+    }
+
+    50% {
+        transform: translate(-10px, 15px);
+    }
+}
+
+.animate-float1 {
+    animation: float1 4s ease-out infinite;
+}
+
+.animate-float2 {
+    animation: float2 5s ease-out infinite;
+}
+
+.animate-float3 {
+    animation: float3 4.5s ease-out infinite;
+}
+
+.animate-float4 {
+    animation: float4 6s ease-out infinite;
+}
+
+.animate-float5 {
+    animation: float5 5s ease-out infinite;
+}
