@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Luckiest+Guy&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Sawarabi+Gothic&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: none;
+    border-radius: 0 30% 30% 0;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: large;
+}
+
+.navbtn{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    border: none;
+    width: 200px;
+    height: 60px;
+}
