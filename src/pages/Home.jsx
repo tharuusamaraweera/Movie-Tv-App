@@ -11,7 +11,7 @@ export default function Home() {
     <>
 
     <div className='container'>
-        <h1 className='mt-20 text-6xl font-bold text-center text-white border-b-2 border-purple-400 header ml-50'>Welcome to <span className='text-transparent bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text'>CineVault...</span></h1>
+        <h1 className='mt-20 text-6xl font-bold text-center text-white ml-50'>Welcome to <span className='text-transparent bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text'>CineVault...</span></h1>
     </div>
 
     <div className='container flex justify-between gap-10 mt-20'>
@@ -20,11 +20,10 @@ export default function Home() {
            <img src={img2} alt="movie-img" className='absolute w-full h-full animate-float2' />
            <img src={img3} alt="movie-img" className='absolute w-full h-full animate-float3' />
            <img src={img4} alt="movie-img" className='absolute w-full h-full animate-float4' />
-           <img src={img5} alt="movie-img" className='absolute w-full h-full animate-float5' />
         </div>
         
-        <div className='justify-end w-2/5 p-5 bg-gray-800 rounded-lg h-120'>
-
+        <div className='justify-end w-2/5 p-5 bg-transparent h-120'>
+             <p className='justify-start text-4xl text-yellow-300'>Watch new releses Movies and TV series in one place...</p>
         </div>
     </div>
 

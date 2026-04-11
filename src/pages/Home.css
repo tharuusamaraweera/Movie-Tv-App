@@ -58,18 +58,6 @@ body{
     }
 }
 
-@keyframes float5 {
-
-    0%,
-    100% {
-        transform: translate(10px, -15px);
-    }
-
-    50% {
-        transform: translate(-10px, 15px);
-    }
-}
-
 .animate-float1 {
     animation: float1 4s ease-out infinite;
 }
@@ -84,8 +72,4 @@ body{
 
 .animate-float4 {
     animation: float4 6s ease-out infinite;
-}
-
-.animate-float5 {
-    animation: float5 5s ease-out infinite;
 }
