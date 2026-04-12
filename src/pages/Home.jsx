@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import "./Home.css";
 import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
@@ -6,6 +7,48 @@ import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.jpg";
 import img5 from "./images/img5.jpg";
 import tape from "./images/tape.jpg";
+
+const texts = [
+  "Discover stories that stay with you long after the screen fades.",
+  "Watch movies and series that define every mood.",
+  "A world of cinema, one click away.",
+  "Your next favorite story is waiting to be played.",
+  "Step into worlds built by imagination and emotion.",
+];
+
+function Typewriter() {
+  const [textIndex, setTextIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    const currentText = texts[textIndex];
+
+    if (charIndex < currentText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(currentText.slice(0, charIndex + 1));
+        setCharIndex(charIndex + 1);
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    } else {
+      const timeout = setTimeout(() => {
+        setCharIndex(0);
+        setDisplayText("");
+        setTextIndex((prev) => (prev + 1) % texts.length);
+      }, 2000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [charIndex, textIndex]);
+  
+  return (
+    <h1 className="mt-10 text-3xl text-center text-white opacity-40 displayText">
+      {displayText}
+      <span className="animate-blink">|</span>
+    </h1>
+  );
+}
 
 export default function Home() {
   return (
@@ -34,14 +77,14 @@ export default function Home() {
               className="absolute w-full h-full slide"
             />
 
-            <img 
+            <img
               src={img5}
               alt="movie-img"
               className="absolute w-full h-full slide"
             />
           </div>
 
-          <div className="justify-end p-10 mx-10 bg-transparent mt-30 w-4/7 h-120">
+          <div className="justify-end p-10 mx-10 mt-20 bg-transparent w-4/7 h-120">
             <h1 className="mb-3 text-5xl font-bold text-center text-gray-400 header">
               Welcome to{" "}
               <span className="text-transparent text-border-3 bg-linear-to-r from-blue-800 to-purple-500 bg-clip-text text-7xl">
@@ -55,7 +98,7 @@ export default function Home() {
                   <img
                     key={i}
                     src={tape}
-                    className="w-auto h-8 opacity-25 shrink-0"
+                    className="w-auto h-8 opacity-15 shrink-0"
                   />
                 ))}
               </div>
@@ -73,12 +116,15 @@ export default function Home() {
               your favorites, track what you love, and enjoy a smooth, simple
               viewing experience designed for everyone.
             </p>
-            <div className="flex justify-end gap-20 mt-30">
-              <button className="px-10 py-6 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]">
+            <div className="w-full h-30">
+              <Typewriter />
+            </div>
+            <div className="flex justify-end gap-10 mt-0">
+              <button className="px-10 py-4 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]">
                 Explore Now
               </button>
-              <button className="px-18 py-6 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]">
-                My List
+              <button className="px-18 py-4 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]">
+                Contact Us
               </button>
             </div>
           </div>
