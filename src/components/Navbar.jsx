@@ -3,7 +3,7 @@ import'./css/Navbar.css'
 
 export default function Navbar() {
   return (
-    <nav className='nav bg-gray-900 text-white p-2 flex justify-between items-center shadow-[0_4px_20px_rgba(60,120,246,0.8)]'>
+    <nav className='flex items-center justify-between p-2 text-white bg-gray-900 navbar'>
         <h1 className='p-5 text-2xl font-bold'>Cine<span className='text-yellow-600'>Vault</span></h1>
         <ul className='flex p-2 justify-right ml-50'>
            <li><button className='transform cursor-pointer duration-400 navbtn hover:text-yellow-400 hover:scale-105'><a href="#">Home</a></button></li>
