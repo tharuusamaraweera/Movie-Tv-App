@@ -111,10 +111,42 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-20 mt-10 bg-gray-900">
-        <p className="pt-6 text-sm text-center text-gray-500">
-          &copy; 2024 CineVault. All rights reserved.
-        </p>
+      <div className="w-full mt-0 bg-transparent h-170">
+        <h2 className="m-10 mt-10 text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
+          Latest Movies
+        </h2>
+        <div className="flex gap-20 p-5 mx-10 mt-10">
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+        </div>
+        <a
+          href="#"
+          className="block w-max px-10 py-4 mx-auto mt-10 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
+        >
+          View All
+        </a>
+      </div>
+
+      <div className="w-full mt-0 bg-transparent h-170">
+        <h2 className="m-10 mt-10 text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
+          Latest TV Series
+        </h2>
+        <div className="flex gap-20 p-5 mx-10 mt-10">
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card"></div>
+        </div>
+        <a
+          href="#"
+          className="block w-max px-10 py-4 mx-auto mt-10 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
+        >
+          View All
+        </a>
       </div>
     </>
   );
