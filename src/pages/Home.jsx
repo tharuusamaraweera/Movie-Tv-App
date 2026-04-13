@@ -53,35 +53,15 @@ function Typewriter() {
 export default function Home() {
   return (
     <>
-      <div className="w-full p-0 mx-0">
-        <div className="flex justify-between gap-5">
-          <div className="relative justify-start overflow-hidden bg-gray-800 border-2 w-3/7 h-180 flex-box">
-            <img
-              src={img1}
-              alt="movie-img"
-              className="absolute w-full h-full slide"
-            />
-            <img
-              src={img2}
-              alt="movie-img"
-              className="absolute w-full h-full slide"
-            />
-            <img
-              src={img3}
-              alt="movie-img"
-              className="absolute w-full h-full slide"
-            />
-            <img
-              src={img4}
-              alt="movie-img"
-              className="absolute w-full h-full slide"
-            />
+      <div className="w-full p-0 mx-0 pt-22">
+        <div className="flex justify-between gap-5 ">
+          <div className="relative z-0 justify-start overflow-hidden bg-gray-800 border-2 w-3/7 h-180 flex-box">
+            <img src={img1} alt="movie-img" className="w-full h-full slide" />
+            <img src={img2} alt="movie-img" className="w-full h-full slide" />
+            <img src={img3} alt="movie-img" className="w-full h-full slide" />
+            <img src={img4} alt="movie-img" className="w-full h-full slide" />
 
-            <img
-              src={img5}
-              alt="movie-img"
-              className="absolute w-full h-full slide"
-            />
+            <img src={img5} alt="movie-img" className="w-full h-full slide" />
           </div>
 
           <div className="justify-end p-10 mx-10 mt-20 bg-transparent w-4/7 h-120">
@@ -129,6 +109,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="w-full h-20 mt-10 bg-gray-900">
+        <p className="pt-6 text-sm text-center text-gray-500">
+          &copy; 2024 CineVault. All rights reserved.
+        </p>
       </div>
     </>
   );

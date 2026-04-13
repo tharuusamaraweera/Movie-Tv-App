@@ -14,6 +14,12 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgb(1, 0, 24);
+    overflow-x: hidden;
+}
+
+.slide {
+    z-index: 0;
+    position: absolute;
 }
 
 button{
