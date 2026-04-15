@@ -7,6 +7,11 @@ import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.jpg";
 import img5 from "./images/img5.jpg";
 import tape from "./images/tape.jpg";
+import movie1 from "./images/movie1.jpg";
+import movie2 from "./images/movie2.jpg";
+import movie3 from "./images/movie3.jpg";
+import movie4 from "./images/movie4.jpg";
+import movie5 from "./images/movie5.jpg";
 
 const texts = [
   "Discover stories that stay with you long after the screen fades.",
@@ -117,25 +122,35 @@ export default function Home() {
           Latest Movies
         </h2>
         <div className="flex gap-20 p-5 mx-10 mt-10">
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer w-100 h-80 hover:scale-105 card">
+            <img src={movie1} alt="TV Series 1" className="w-full h-70" />
+            <p className="m-3 font-semibold text-center text-white txt-xl">
+              His & Hers
+            </p>
           </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img2} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
+            <img src={movie2} alt="TV Series 1" className="w-full h-70" />
+            <p className="m-3 font-semibold text-center text-white txt-xl">
+              One Piece
+            </p>
           </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img3} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
+            <img src={movie3} alt="TV Series 1" className="w-full h-70" />
+            <p className="m-3 font-semibold text-center text-white txt-xl">
+              The Witcher
+            </p>
           </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img4} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
+            <img src={movie4} alt="TV Series 1" className="w-full h-70" />
+            <p className="m-3 font-semibold text-center text-white txt-xl ">
+              The Withces
+            </p>
           </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img2} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
+            <img src={movie5} alt="TV Series 1" className="w-full h-70" />
+            <p className="m-3 font-semibold text-center text-white txt-xl ">
+              Sand Help
+            </p>
           </div>
         </div>
         <a
