@@ -109,18 +109,34 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <hr className="my-10 mt-0 border-gray-600" />
       </div>
 
-      <div className="w-full mt-0 bg-transparent h-170">
+      <div className="w-full h-auto bg-transparent mt-30">
         <h2 className="m-10 mt-10 text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
           Latest Movies
         </h2>
         <div className="flex gap-20 p-5 mx-10 mt-10">
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img2} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img3} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img4} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img2} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">Movie 1</p>
+          </div>
         </div>
         <a
           href="#"
@@ -128,18 +144,44 @@ export default function Home() {
         >
           View All
         </a>
+        <hr className="my-10 mt-10 border-gray-600" />
       </div>
 
-      <div className="w-full mt-0 bg-transparent h-170">
-        <h2 className="m-10 mt-10 text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
+      <div className="w-full h-auto mt-0 bg-transparent">
+        <h2 className="m-10 text-6xl font-bold text-transparent mt-30 bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
           Latest TV Series
         </h2>
         <div className="flex gap-20 p-5 mx-10 mt-10">
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
-          <div className="bg-gray-400 w-100 h-80 card"></div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">
+              TV Series 1
+            </p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">
+              TV Series 1
+            </p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">
+              TV Series 1
+            </p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">
+              TV Series 1
+            </p>
+          </div>
+          <div className="bg-gray-400 w-100 h-80 card">
+            <img src={img1} alt="TV Series 1" className="w-full h-70" />
+            <p className="mt-3 font-semibold text-center txt-lg ">
+              TV Series 1
+            </p>
+          </div>
         </div>
         <a
           href="#"
@@ -147,6 +189,7 @@ export default function Home() {
         >
           View All
         </a>
+        <hr className="my-10 mt-10 border-gray-600" />
       </div>
     </>
   );
