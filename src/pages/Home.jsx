@@ -12,6 +12,11 @@ import movie2 from "./images/movie2.jpg";
 import movie3 from "./images/movie3.jpg";
 import movie4 from "./images/movie4.jpg";
 import movie5 from "./images/movie5.jpg";
+import ts1 from "./images/ts1.jpg";
+import ts2 from "./images/ts2.jpg";
+import ts3 from "./images/ts3.jpg";
+import ts4 from "./images/ts4.jpg";
+import ts5 from "./images/ts5.jpg";
 
 const texts = [
   "Discover stories that stay with you long after the screen fades.",
@@ -119,7 +124,6 @@ export default function Home() {
 
       <div className="w-full h-auto p-10 bg-transparent overflow-hiden rounded-2xl">
         <div className="p-10 mx-10 overflow-hidden bg-gray-900 shadow-[5px_5px_10px_rgba(0,30,70,0.99)] rounded-4xl">
-          
           <h2 className="text-5xl font-bold text-transparent text-border-3 bg-clip-text bg-linear-to-r from-yellow-100 to-gray-100">
             Latest Movies
           </h2>
@@ -173,51 +177,59 @@ export default function Home() {
         </div>
 
         <hr className="my-10 mt-20 border-gray-600" />
-      </div>
 
-      <div className="w-full h-auto mt-0 bg-transparent">
-        <h2 className="m-10 text-6xl font-bold text-transparent mt-30 bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
-          Latest TV Series
-        </h2>
-        <div className="flex gap-20 p-5 mx-10 mt-10">
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">
-              TV Series 1
-            </p>
+        <div className="p-10 mx-10 mt-5 overflow-hidden bg-gray-900 shadow-[5px_5px_10px_rgba(0,30,70,0.99)] rounded-4xl">
+          <h2 className="text-5xl font-bold text-transparent text-border-3 bg-clip-text bg-linear-to-r from-yellow-100 to-gray-100">
+            Latest TV Shows
+          </h2>
+
+          <div className="gap-10 p-5 mt-5 movie-scroll">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex gap-10">
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={ts1} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Young SHERLOCK
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={ts2} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Seven Dials
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={ts3} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Wednesday
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={ts4} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Bloodhounds 2
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={ts5} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Scarpetta
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">
-              TV Series 1
-            </p>
-          </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">
-              TV Series 1
-            </p>
-          </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">
-              TV Series 1
-            </p>
-          </div>
-          <div className="bg-gray-400 w-100 h-80 card">
-            <img src={img1} alt="TV Series 1" className="w-full h-70" />
-            <p className="mt-3 font-semibold text-center txt-lg ">
-              TV Series 1
-            </p>
-          </div>
+          <a
+            href="#"
+            className="block w-max px-10 py-4 mt-5 mx-auto text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
+          >
+            View All
+          </a>
         </div>
-        <a
-          href="#"
-          className="block w-max px-10 py-4 mx-auto mt-10 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
-        >
-          View All
-        </a>
-        <hr className="my-10 mt-10 border-gray-600" />
       </div>
     </>
   );
