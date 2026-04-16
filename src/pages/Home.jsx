@@ -117,49 +117,62 @@ export default function Home() {
         <hr className="my-10 mt-0 border-gray-600" />
       </div>
 
-      <div className="w-full h-auto bg-transparent mt-30">
-        <h2 className="m-10 mt-10 text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-400">
-          Latest Movies
-        </h2>
-        <div className="flex gap-20 p-5 mx-10 mt-10">
-          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer w-100 h-80 hover:scale-105 card">
-            <img src={movie1} alt="TV Series 1" className="w-full h-70" />
-            <p className="m-3 font-semibold text-center text-white txt-xl">
-              His & Hers
-            </p>
+      <div className="w-full h-auto p-10 bg-transparent overflow-hiden rounded-2xl">
+        <div className="p-10 mx-10 overflow-hidden bg-gray-900 shadow-[5px_5px_10px_rgba(0,30,70,0.99)] rounded-4xl">
+          
+          <h2 className="text-5xl font-bold text-transparent text-border-3 bg-clip-text bg-linear-to-r from-yellow-100 to-gray-100">
+            Latest Movies
+          </h2>
+
+          <div className="gap-10 p-5 mt-5 movie-scroll">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex gap-10">
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={movie1} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    His & Hers
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={movie2} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    One Piece
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={movie3} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    The Witcher
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={movie4} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    The Witches
+                  </p>
+                </div>
+
+                <div className="h-auto transition duration-500 bg-transparent border-2 border-blue-400 cursor-pointer w-72 hover:scale-105">
+                  <img src={movie5} className="w-full h-80" />
+                  <p className="m-3 text-xl font-semibold text-center text-white">
+                    Sand Help
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
-            <img src={movie2} alt="TV Series 1" className="w-full h-70" />
-            <p className="m-3 font-semibold text-center text-white txt-xl">
-              One Piece
-            </p>
-          </div>
-          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
-            <img src={movie3} alt="TV Series 1" className="w-full h-70" />
-            <p className="m-3 font-semibold text-center text-white txt-xl">
-              The Witcher
-            </p>
-          </div>
-          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
-            <img src={movie4} alt="TV Series 1" className="w-full h-70" />
-            <p className="m-3 font-semibold text-center text-white txt-xl ">
-              The Withces
-            </p>
-          </div>
-          <div className="transition duration-1000 bg-transparent border-2 border-blue-400 cursor-pointer hover:scale-105 w-100 h-80 card">
-            <img src={movie5} alt="TV Series 1" className="w-full h-70" />
-            <p className="m-3 font-semibold text-center text-white txt-xl ">
-              Sand Help
-            </p>
-          </div>
+          <a
+            href="#"
+            className="block w-max px-10 py-4 mt-5 mx-auto text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
+          >
+            View All
+          </a>
         </div>
-        <a
-          href="#"
-          className="block w-max px-10 py-4 mx-auto mt-10 text-3xl text-transparent transition duration-500 border border-blue-400 rounded-lg cursor-pointer bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:bg-blue-600 hover:text-blue-600 transmition hover:scale-105 hover:border-blue-600 hover:shadow-[0_6px_10px_rgba(59,130,246,0.8)]"
-        >
-          View All
-        </a>
-        <hr className="my-10 mt-10 border-gray-600" />
+
+        <hr className="my-10 mt-20 border-gray-600" />
       </div>
 
       <div className="w-full h-auto mt-0 bg-transparent">

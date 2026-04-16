@@ -99,3 +99,24 @@ button{
             "ELSH" 0,
             "ELXP" 0;
 }
+
+/* scrolling animation */
+@keyframes scrollMovies {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.movie-scroll {
+    display: flex;
+    width: max-content;
+    animation: scrollMovies 25s linear infinite;
+}
+
+.movie-scroll:hover {
+    animation-play-state: paused;
+}
