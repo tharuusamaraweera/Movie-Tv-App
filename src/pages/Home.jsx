@@ -231,6 +231,10 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+      <hr className="my-10 border-gray-600" />
+
+  
     </>
   );
 }
